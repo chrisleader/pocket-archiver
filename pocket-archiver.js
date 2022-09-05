@@ -1,4 +1,4 @@
-// Node.js does not support the fetch() method. To run this program in Node.js, node-fetch is installed and a package.json file with a "module" type is required.
+// Node.js does not support the fetch() method. To run this program in Node.js, node-fetch is installed and a package.json file with a "module" type is provided.
 import fetch from "node-fetch";
 
 // Replace ${consumer_key} with your consumer key from your Pocket application.
