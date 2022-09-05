@@ -7,7 +7,7 @@ const consumerKey = '${consumer_key}';
 //Replace ${access_token} with your access token from your Pocket application.
 const accessToken = '${access_token}';
 
-//This variable stores the root of the API url for use in our functions.
+//This variable stores the root of the API url for use in the following functions.
 const pocketBaseUrl = 'https://getpocket.com/v3';
 
 //The getIds function retrieves a list of all item IDs from Pocket.
