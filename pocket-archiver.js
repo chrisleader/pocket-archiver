@@ -1,4 +1,4 @@
-// Node.js does not support the fetch() method. To run this program in Node.js, node-fetch is installed and a package.json with a "module" type is required.
+// Node.js does not support the fetch() method. To run this program in Node.js, node-fetch is installed and a package.json file with a "module" type is required.
 import fetch from "node-fetch";
 
 // Replace ${consumer_key} with your consumer key from your Pocket application.
@@ -7,10 +7,10 @@ const consumerKey = '${consumer_key}';
 //Replace ${access_token} with your access token from your Pocket application.
 const accessToken = '${access_token}';
 
-//This variables stores the root of the API url for use in our functions.
+//This variable stores the root of the API url for use in our functions.
 const pocketBaseUrl = 'https://getpocket.com/v3';
 
-//The getIds function retrieves a list of all IDs from Pocket.
+//The getIds function retrieves a list of all item IDs from Pocket.
 const getIds = async () => {
     const retrieveEndpoint = '/get';
     const requestParams = `?consumer_key=${consumerKey}&access_token=${accessToken}`
@@ -30,7 +30,7 @@ const getIds = async () => {
 
 const ids = await getIds();
 
-//This section renders the list of ids that we will archive in the required JSON format for the Pocket API.
+//This section renders the list of IDs that we will archive in the required JSON format for the Pocket API.
 let actionsArray = [];
 
 for (let i = 0; i < ids.length; i++) {
