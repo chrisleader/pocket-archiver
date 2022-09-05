@@ -13,8 +13,8 @@ const pocketBaseUrl = 'https://getpocket.com/v3';
 //The getIds function retrieves a list of all item IDs from Pocket.
 const getIds = async () => {
     const retrieveEndpoint = '/get';
-    const requestParams = `?consumer_key=${consumerKey}&access_token=${accessToken}`
-    const urlToFetch = `${pocketBaseUrl}${retrieveEndpoint}${requestParams}`
+    const requestParams = `?consumer_key=${consumerKey}&access_token=${accessToken}`;
+    const urlToFetch = `${pocketBaseUrl}${retrieveEndpoint}${requestParams}`;
 
     try {
         const response = await fetch(urlToFetch);
@@ -45,8 +45,8 @@ let jsonActionsArray = JSON.stringify(actionsArray);
 //The archive function archives all items retrieved from Pocket. 
 const archive = async () => {
     const modifyEndpoint = '/send';
-    const requestParams = `?consumer_key=${consumerKey}&access_token=${accessToken}&actions=${jsonActionsArray}`
-    const urlToFetch = `${pocketBaseUrl}${modifyEndpoint}${requestParams}`
+    const requestParams = `?consumer_key=${consumerKey}&access_token=${accessToken}&actions=${jsonActionsArray}`;
+    const urlToFetch = `${pocketBaseUrl}${modifyEndpoint}${requestParams}`;
 
     try {
         const response = await fetch(urlToFetch);
