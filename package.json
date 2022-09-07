@@ -1,3 +1,25 @@
 {
-    "type": "module"
+  "name": "pocket-archiver",
+  "version": "1.0.0",
+  "description": "This is a program to retrieve and archive your saved items in Pocket.",
+  "main": "pocket-archiver.js",
+  "type": "module",
+  "scripts": {
+    "start": "node pocket-archiver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisleader/pocket-archiver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisleader/pocket-archiver/issues"
+  },
+  "homepage": "https://github.com/chrisleader/pocket-archiver#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "node-fetch": "^3.2.10"
+  }
 }
