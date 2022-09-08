@@ -1,7 +1,6 @@
 //Configure CONSUMER_KEY and ACCESS_TOKEN in the .env file. dotenv will import them here.
 import * as dotenv from 'dotenv'
 dotenv.config()
-console.log(process.env);
 
 //Node.js does not support the fetch() method. To run this program in Node.js, node-fetch is imported and a package.json file is provided with "module" type configured.
 import fetch from 'node-fetch';
