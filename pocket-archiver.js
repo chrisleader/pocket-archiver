@@ -1,8 +1,12 @@
+//Configure CONSUMER_KEY and ACCESS_TOKEN in the .env file. dotenv will import them here.
 import * as dotenv from 'dotenv'
 dotenv.config()
-// Node.js does not support the fetch() method. To run this program in Node.js, node-fetch is installed and a package.json file with a "module" type is provided.
-import fetch from "node-fetch";
+console.log(process.env);
 
+//Node.js does not support the fetch() method. To run this program in Node.js, node-fetch is imported and a package.json file is provided with "module" type configured.
+import fetch from 'node-fetch';
+
+//This sets the imported keys as variables.
 const {CONSUMER_KEY, ACCESS_TOKEN} = process.env
 
 //This variable stores the root of the API url for use in the following functions.
